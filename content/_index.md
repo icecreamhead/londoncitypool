@@ -1,4 +1,4 @@
 ---
-title: Resume
+title: Coming soon...
 draft: false
 ---
