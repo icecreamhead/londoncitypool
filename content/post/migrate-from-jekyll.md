@@ -4,6 +4,7 @@ date: 2014-03-10
 linktitle: Migrating from Jekyll
 title: Migrate to Hugo from Jekyll
 weight: 10
+draft: true
 series:
 - Hugo 101
 aliases:
