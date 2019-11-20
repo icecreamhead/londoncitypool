@@ -1,9 +1,12 @@
-+++
-title = "About"
-date = "2014-04-09"
-aliases = ["about-us","about-hugo","contact"]
-author = "Hugo Authors"
-draft = false
-+++
+---
+title: About
+date: 2017-06-07T15:36:00+05:30
+noprevnext: true
+nodateline: true
+disable_comments: true
 
-Josh Cooke is a full-stack software engineer and is currently the Data Engineering Practice Lead at [Starling Bank](https://starlingbank.com). 
+---
+
+# May the Force be with you, the Torque about you
+
+This is where my great about goes
