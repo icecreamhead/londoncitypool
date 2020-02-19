@@ -34,36 +34,84 @@ canonifyURLs = true
 
 
 [[menu.main]]
-    name  = "About"
-    url   = "/about/"
+    name  = "Home"
+    url   = "/"
     weight = 10
     
 [[menu.main]]
-    name  = "contact"
-    url   = "/contact/"
+    name  = "Leagues"
+    url   = "/leagues/"
     weight = 20
 
 [[menu.main]]
-    name  = "Contact2"
-    url   = "/contact/"
-    parent = "contact"
+    name  = "Fixtures"
+    url   = "/fixtures/"
+    weight = 30
 
 [[menu.main]]
-    name  = "Contact21"
-    url   = "/contact/"
-    parent = "Contact2"
-    weight = 20
+    name  = "Player Stats"
+    weight = 40
 
 [[menu.main]]
-    name  = "cOntact22"
-    url   = "/contact/"
-    parent = "Contact2"
+    name  = "Division 1"
+    url   = "/stats/div1/"
+    parent = "Player Stats"
     weight = 10
 
 [[menu.main]]
-    name  = "cOntact3"
-    url   = "/contact/"
-    parent = "contact"
+    name  = "Division 2"
+    url   = "/stats/div2/"
+    parent = "Player Stats"
+    weight = 20
+
+[[menu.main]]
+    name  = "KO Competitions"
+    weight = 50
+
+[[menu.main]]
+    name  = "Singles"
+    url   = "/ko/singles/"
+    parent = "KO Competitions"
+    weight = 10
+
+[[menu.main]]
+    name  = "Doubles"
+    url   = "/ko/doubles/"
+    parent = "KO Competitions"
+    weight = 20
+
+[[menu.main]]
+    name  = "Team"
+    url   = "/ko/team/"
+    parent = "KO Competitions"
+    weight = 30
+
+[[menu.main]]
+    name  = "Teams"
+    url   = "/teams/"
+    weight = 60
+
+[[menu.main]]
+    name  = "Hall of Fame"
+    url   = "/hall-of-fame/"
+    weight = 70
+
+[[menu.main]]
+    name  = "Admin"
+    weight = 80
+
+[[menu.main]]
+    name  = "Rules"
+    url   = "/rules/"
+    parent = "Admin"
+    weight = 10
+
+[[menu.main]]
+    name  = "Scoresheet"
+    url   = "/rules/scoresheet"
+    parent = "Admin"
+    weight = 20
+
 		
 #[params.share]
 #    enable = true
