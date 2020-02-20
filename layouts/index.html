@@ -3,27 +3,64 @@
 {{ partial "header" . }}
 <body class="home blog logged-in admin-bar no-customize-support custom-background ">
 <div class="wrapper">
-    <header id="branding" >
+    <header id="branding">
         {{ partial "head" . }}
         {{ partial "nav" . }}
         {{ partial "slider" . }}
     </header>
     <div id="main" class="container clearfix">
         <div id="container">
-            <div {{ if .Site.Params.widgets }}id="primary"{{ end }} class="no-margin-left">
+            <div {{ if .Site.Params.widgets }}id="primary" {{ end }} class="no-margin-left">
                 <div id="content">
-<!--                    {{ partial "article_list" . }}-->
-<!--                    <p>This the homepage. It needs some work.</p>-->
+                    <!--                    {{ partial "article_list" . }}-->
+                    <!--                    <p>This the homepage. It needs some work.</p>-->
                     <h1>
                         Welcome to London City Pool League
                     </h1>
-                    <div id="content-left" style="margin: auto; display: block; float: left; width: 50%; background-color: red">
-                        <p>lorem ipsum etc etc</p>
-                        <img src="hurricane.jpg"/>
+                    <div id="content-left"
+                         style="margin: auto; display: block; float: left; width: 58%; padding: 1%">
+                        <h2>About The League</h2>
+                        <p>Established in 1992, the London City Pool League was set up to allow
+                            businesses the opportunity to enter pool teams in an independent league.
+                            It is still strongly associated with the business community, however we
+                            are now open to all that want to play competitive 8 ball pool in
+                            London.</p>
+                        <p>The London City Pool League is primarily based in the city, with teams
+                            playing out of pubs and snooker clubs all around central London. If you
+                            are looking to play competitive 8 ball pool in central London, get your
+                            cue! Teams are six players (but you can register more). Find a home
+                            venue or simply use one of the existing ones. The venue must have at
+                            least two good quality 8 ball pool tables. Contact us for further
+                            details.</p>
+                        <img src="hurricane.jpg" style="text-align: middle"/>
+                        <br/><br/>
                         <img src="spots.jpg"/>
+                        <br/><br/>
                     </div>
-                    <div id="content-righ" style="margin: auto; display: block; float: right; width: 50%; background-color: yellow;">
-                        <p>Committee info goes here</p>
+                    <div id="content-righ"
+                         style="margin: auto; display: block; float: right; width: 38%; padding: 1%; text-align: right">
+                        <h2>Committee</h2>
+                        <p>
+                            Chairman: Leela Widger
+                            <br/>
+                            <a href="mailto:chairman@londoncitypool.com">chairman@londoncitypool.com</a>
+                        </p>
+                        <p>
+                            Treasurer: Tristram Taylor<br/>
+                            <a href="mailto:treasurer@londoncitypool.com">treasurer@londoncitypool.com</a>
+                        </p>
+                        <p>
+                            Division 1 Director: Josh Cooke<br/>
+                            <a href="mailto:div1@londoncitypool.com">div1@londoncitypool.com</a>
+                        </p>
+                        <p>
+                            Division 2 Director: Phil Matthews<br/>
+                            <a href="mailto:div2@londoncitypool.com">div2@londoncitypool.com</a>
+                        </p>
+                        <p>
+                            Knockout Director: Will Byrne<br/>
+                            <a href="mailto:ko@londoncitypool.com">ko@londoncitypool.com</a>
+                        </p>
                     </div>
                 </div>
             </div><!-- #content -->

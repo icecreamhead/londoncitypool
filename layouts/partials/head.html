@@ -1,0 +1,23 @@
+<div class="container clearfix">
+    <div class="hgroup-wrap clearfix"  style="padding-bottom:15px">
+        <img src="{{ .Site.Params.logo | absURL }}" style="display:block;float:left"/>
+        <div id="site-logo" class="clearfix" style="float:right;text-align:right">
+
+            <!--            <a href="/" rel="home">-->
+
+            <h1 id="site-title">
+                {{ if .Site.Params.logo }}
+
+                {{ end }}
+                {{ if .Site.Params.title_in_logo }}
+                <span class="site-title">{{ .Site.Title }}</span>
+                {{ end }}
+            </h1>
+            <h2 id="site-description">{{ .Site.Params.site_description }}</h2>
+            <!--			</a>-->
+
+        </div><!-- #site-logo -->
+
+    </div><!-- .hgroup-wrap -->
+</div><!-- .container -->
+
