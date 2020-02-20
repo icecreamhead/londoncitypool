@@ -102,13 +102,13 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "Rules"
-    url   = "/rules/"
+    url   = "/admin/rules"
     parent = "Admin"
     weight = 10
 
 [[menu.main]]
     name  = "Scoresheet"
-    url   = "/rules/scoresheet"
+    url   = "/citypoolleague_resultsheet.pdf"
     parent = "Admin"
     weight = 20
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {{ partial "header" . }}
+  <body class="home blog logged-in admin-bar no-customize-support custom-background ">
+    <div class="wrapper">
+      <header id="branding" >
+	{{ partial "head" . }}
+	{{ partial "nav" . }}
+      </header>
+      <div id="main" class="container clearfix">
+	<div id="container">
+        <header class="entry-header">
+            <h2 class="entry-title" itemprop="name">
+                {{ .Title }}
+            </h2>
+        </header>
+        {{ if isset .Params "iframe_url" }}
+          <iframe width="{{ .Params.iframe_width }}" height="{{ .Params.iframe_height }}" src="{{ .Params.iframe_url }}"/>
+        {{ else }}
+          <iframe width="{{ .Params.iframe_width }}" height="{{ .Params.iframe_height }}" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQlXrhjK1IEfeImO-Kv8T6eZG12T2Q2YRvb6OcmxWu8GzIV7Y0WbUNhNVKAz7S6tE8On7eJYfwyXhQl/pubhtml?gid={{ .Params.sheet_gid }}&single=true"/>
+        {{ end }}
+      </div><!-- #container -->   
+    </div><!-- #main -->
+    {{ partial "footer.html" . }}
+  </body>
+</html>
