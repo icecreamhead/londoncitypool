@@ -6,5 +6,5 @@ nodateline: true
 disable_comments: true
 sheet_gid: 4
 iframe_height: 520
-iframe_width: 600
+iframe_width: 610
 ---
