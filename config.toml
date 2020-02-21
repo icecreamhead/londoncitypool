@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://beta.londoncitypool.com/"
 title = "London City Pool League"
 subtitle = "London's premier 8-ball pool league"
 languageCode = "en-gb"
