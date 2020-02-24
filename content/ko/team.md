@@ -5,6 +5,6 @@ noprevnext: true
 nodateline: true
 disable_comments: true
 sheet_gid: 13
-iframe_height: 800
-iframe_width: 1200
+iframe_height: 657
+iframe_width: 953
 ---

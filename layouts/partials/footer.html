@@ -1,0 +1,21 @@
+<footer id="footerarea" class="clearfix">
+  <div class="widget-wrap" style="height: 1px">
+    <div class="container">
+      <div class="widget-area clearfix">
+      </div><!-- .widget-area -->
+    </div><!-- .container -->
+  </div><!-- .widget-wrap -->
+  
+  <div id="site-generator">
+    <div class="container">
+      <div class="copyright" style="text-align: center;width: 100%">&copy; {{now.Format "2006"}}
+	{{ with .Site.Params.copyright }}{{ . | markdownify}}{{ end }} Powered by <a href="http://gohugo.io">Hugo</a>. Original theme by <a href="http://colorlib.com/wp/travelify/">Colorlib</a> adapted for Hugo by <a href="http://balaramadurai.net">Dr. Bala Ramadurai</a>.
+      </div><!-- .copyright -->
+    </div><!-- .container -->
+  </div><!-- #site-generator -->
+  <div class="back-to-top">
+    <a href="#branding"></a>
+  </div>
+</footer>
+
+{{ partial "footer_js" . }}
