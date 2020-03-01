@@ -1,10 +1,10 @@
-<form id="form" method="POST" data-netlify="true" action=".">
-    <p>I am form.</p>
+<form id="form" name="scoresheet-submission" method="POST" data-netlify="true" action=".">
+    <p>Submit match scoresheets here</p>
     <p>
-        <label for="the-file">A file please!</label>
-        <input type="file" id="the-file"/><br/>
-        <label for="some-text-here">And some text:</label><br/>
-        <input type="text" id="some-text-here"/><br/>
+        <label for="the-file">Upload your match scoresheet:</label>
+        <input type="file" id="the-file" name="scoresheet"/><br/>
+        <label for="some-text-here">Additional Info</label><br/>
+        <input type="text" id="some-text-here" name="extra-info"/><br/>
         <input type="submit"/>
     </p>
 </form>
