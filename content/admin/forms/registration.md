@@ -1,5 +1,5 @@
 ---
-title: Player Registration
+title: Scoresheet Submission
 date: 2020-02-20T15:36:00+05:30
 noprevnext: true
 nodateline: true

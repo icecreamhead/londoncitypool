@@ -1,11 +1,13 @@
-<form id="form" name="scoresheet-submission" method="POST" data-netlify="true" action="/" data-netlify-recaptcha="true">
-    <p>Submit match scoresheet here</p>
-    <p>
+<form id="form" name="scoresheet-submission" data-netlify="true" data-netlify-recaptcha="true">
+    <div>
+        <p>Submit match scoresheet here</p>
+    </div>
+    <div>
         <label for="the-file">Upload your match scoresheet:</label>
         <input type="file" id="the-file" name="scoresheet"/><br/>
         <label for="some-text-here">Additional Info</label><br/>
         <input type="text" id="some-text-here" name="extra-info"/><br/>
-    </p>
-    <div data-netlify-recaptcha="true">Captcha!</div>
+    </div>
+    <div data-netlify-recaptcha="true"></div>
     <input type="submit"/>
 </form>
