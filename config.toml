@@ -50,6 +50,7 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "Player Stats"
+    url   = "/stats/div1/"
     weight = 40
 
 [[menu.main]]
@@ -66,6 +67,7 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "KO Competitions"
+    url   = "/ko/singles/"
     weight = 50
 
 [[menu.main]]
@@ -98,6 +100,7 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "Captain Resources"
+    url   = "/admin/rules"
     weight = 80
 
 [[menu.main]]
