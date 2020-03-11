@@ -10,10 +10,12 @@
         <div class="container">
             <div class="copyright" style="text-align: center;width: 100%">&copy; {{now.Format "2006"}}
                 {{ with .Site.Params.copyright }}{{ . | markdownify}}{{ end }} Powered by <a
-                        href="http://gohugo.io">Hugo</a>
+                        href="http://gohugo.io">Hugo</a> &amp; <a href="https://www.netlify.com/">Netlify</a>
                 <br/>Based on Travelify by <a href="http://colorlib.com/wp/travelify/">Colorlib</a>
                 &amp; <a href="http://balaramadurai.net">Dr. Bala Ramadurai</a>
                 <br/>Adapted for London City Pool by <a href="https://joshcooke.dev">Josh Cooke</a>
+                {{ $t := .Scratch.Get "page_type" }}
+<!--                {{ $t }}-->
             </div><!-- .copyright -->
         </div><!-- .container -->
     </div><!-- #site-generator -->

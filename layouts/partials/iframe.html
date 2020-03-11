@@ -1,0 +1,8 @@
+{{ if isset .Params "iframe_url" }}
+<iframe width="{{ .Params.iframe_width }}"
+        height="{{ .Params.iframe_height }}"
+        src="{{ .Params.iframe_url }}"/>
+</iframe>
+{{ else }}
+<div>Missing param: iframe_url</div>
+{{ end }}

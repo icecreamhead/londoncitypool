@@ -14,18 +14,14 @@
                     {{ .Title }}
                 </h2>
             </header>
-            {{ if isset .Params "iframe_url" }}
-            <iframe width="{{ .Params.iframe_width }}" height="{{ .Params.iframe_height }}"
-                    src="{{ .Params.iframe_url }}"/></iframe>
-            {{ else if isset .Params "sheet_gid" }}
-            <iframe width="{{ .Params.iframe_width }}" height="{{ .Params.iframe_height }}" scrolling="no" style="overflow: hidden"
-                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQlXrhjK1IEfeImO-Kv8T6eZG12T2Q2YRvb6OcmxWu8GzIV7Y0WbUNhNVKAz7S6tE8On7eJYfwyXhQl/pubhtml?gid={{ .Params.sheet_gid }}&single=true&chrome=false"></iframe>
-            {{ else }}
-            {{ partial "form" }}
-            {{ end }}
+            {{ if eq .Params.page_type "iframe" }}{{ partial "iframe" . }}
+            {{ else if eq .Params.page_type "gsheet" }}{{ partial "gsheet" . }}
+            {{ else if eq .Params.page_type "form" }}{{ partial "form" . }}
+            {{ else }}{{ partial "missing-type" . }}{{ end }}
         </div><!-- #container -->
     </div><!-- #main -->
 </div>
+{{ .Scratch.Set "page_type" .Params.page_type }}
 {{ partial "footer.html" . }}
 </body>
 </html>

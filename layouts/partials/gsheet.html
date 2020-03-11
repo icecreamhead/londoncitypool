@@ -1,0 +1,10 @@
+{{ if isset .Params "sheet_gid" }}
+<iframe width="{{ .Params.iframe_width }}"
+        height="{{ .Params.iframe_height }}"
+        scrolling="no"
+        style="overflow: hidden"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQlXrhjK1IEfeImO-Kv8T6eZG12T2Q2YRvb6OcmxWu8GzIV7Y0WbUNhNVKAz7S6tE8On7eJYfwyXhQl/pubhtml?gid={{ .Params.sheet_gid }}&single=true&chrome=false">
+</iframe>
+{{ else }}
+<div>Missing param: sheet_gid</div>
+{{ end }}
