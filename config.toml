@@ -2,18 +2,13 @@ baseURL = "https://beta.londoncitypool.com/"
 title = "London City Pool League"
 subtitle = "London's premier 8-ball pool league"
 languageCode = "en-gb"
-# preservetaxonomynames = true
 theme = "hugo-travelify-theme"
-#GoogleAnalytics = "" # Add your own Google analytics code here in the format UA-XXXXXXXX-X
 canonifyURLs = true
-# rssURI = "feed/" #deprecated feature
 
 [params]
     # Tell me who you are
     author = "icecreamhead"
     site_description = "London's premier 8-ball pool league"
-#    copyright  = "Copyright"
-#    avatar = "avatar.png"
     logo = "lcp-logo-200.png"
     title_in_logo = true # set to true if you want the title along with the logo
     disable_mathjax = true # set to true to disable MathJax
@@ -24,13 +19,6 @@ canonifyURLs = true
     # Add custom assets with their paths relative to the static folder
     custom_css = []
     custom_js  = []
-
-# Create custom menu entries by defining a label and a link for
-# them. Since you can also link posts, you've the option the
-# place the links before or after them.
-#
-# E.g.: "Home" appears before all linked posts in the menu
-# and "Tags" / "Categories" after them.
 
 
 [[menu.main]]
@@ -114,57 +102,3 @@ canonifyURLs = true
     url   = "/citypoolleague_resultsheet.pdf"
     parent = "Captain Resources"
     weight = 20
-
-		
-#[params.share]
-#    enable = true
-#    facebook = true
-#    twitter = true
-#    googleplus = true
-#    linkedin = true
-#    email = true
-
-#[params.privacy]
-#enable = true # false implies switching on tracking application, you can individually turn off applications that you don't want. If enable = true, then all tracking apps are switched off
-#facebook_like = true
-#DisqusShortname = "nikimonikado"
-
-[social]
-# Add your social network accounts to the profile section on the left
-# by entering your username. The links to your account will be
-# created automatically.
-#    rss             = "Needed" # leave this to blank if you do not want RSS feed icon to appear on top
-#    github          = "nikimonikado"
-#    flickr          = "nikimonikado"
-#    instagram       = "nikimonikado"
-#    youtube         = "nikimonikado"
-#    vimeo           = "nikimonikado"
-#    tumblr          = "nikimonikado"
-#    linkedin        = "nikimonikado"
-#    pinterest       = "nikimonikado"
-#    googleplus      = "nikimonikado"
-#    facebook        = "nikimonikado"
-#    twitter         = "nikimonikado"
-#    email           = "joe@example.com"
-
-# Enable and disable widgets for the right sidebar
-#[params.widgets]
-#    recent_articles = true
-#    categories = true
-#    tags = true
-#    tag_cloud = true
-#    archives = false # This feature is yet to be implemented because of limitations in Hugo's way of working.
-#    search = true
-#    mailchimp = true
-#    mailchimpform = "//balaramadurai.us15.list-manage.com/subscribe/post?u=7f4183fa2fe7abe3dc9f4efad&amp;id=49a3dd3745"
-#    author = true
-
-#[params.slider]
-#    enable = false
-#    manual = false # Setting manual to true renders the slide selection to only those where the post has a slider=true option enabled
-#    num_features = 6 # The slider picks up the banner images from the N most recent posts, where num_features is N.
-
-#[Taxonomies]
-#    tags = "tags"
-#    categories = "categories"
-#    author = "author"

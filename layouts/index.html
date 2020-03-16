@@ -10,10 +10,8 @@
     </header>
     <div id="main" class="container clearfix">
         <div id="container">
-            <div {{ if .Site.Params.widgets }}id="primary" {{ end }} class="no-margin-left">
+            <div class="no-margin-left">
                 <div id="content">
-                    <!--                    {{ partial "article_list" . }}-->
-                    <!--                    <p>This the homepage. It needs some work.</p>-->
                     <h1>
                         Welcome to London City Pool League
                     </h1>
@@ -32,12 +30,10 @@
                             venue or simply use one of the existing ones. The venue must have at
                             least two good quality 8 ball pool tables. Contact us for further
                             details.</p>
-                        <img src="hurricane.jpg" style="text-align: center"/>
-                        <br/><br/>
-                        <img src="spots.jpg"/>
-                        <br/><br/>
+                        <img src="hurricane.jpg" style="text-align: center; width: 49%; display: inline;margin: 1px"/>
+                        <img src="spots.jpg" style="width: 49%; display: inline; margin: 1px"/>
                     </div>
-                    <div id="content-righ"
+                    <div id="content-right"
                          style="margin: auto; display: block; float: right; width: 43%; padding: 1%; text-align: right">
                         <h2>Committee</h2>
                         <p>
@@ -65,7 +61,6 @@
                 </div>
             </div><!-- #content -->
         </div><!-- #primary -->
-        {{ partial "widgets" . }}
     </div><!-- #container -->
 </div><!-- #main -->
 {{ partial "footer.html" . }}
