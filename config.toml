@@ -102,3 +102,15 @@ canonifyURLs = true
     url   = "/citypoolleague_resultsheet.pdf"
     parent = "Captain Resources"
     weight = 20
+
+[[menu.main]]
+    name  = "Player Registration"
+    url   = "/admin/forms/registration"
+    parent = "Captain Resources"
+    weight = 30
+
+[[menu.main]]
+    name  = "Result Submission"
+    url   = "/admin/forms/submission"
+    parent = "Captain Resources"
+    weight = 40
