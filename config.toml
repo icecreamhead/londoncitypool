@@ -111,6 +111,6 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "Result Submission"
-    url   = "/admin/forms/submission"
+    url   = "https://forms.gle/Gxcrsfo13oVggA5X7"
     parent = "Captain Resources"
     weight = 40
