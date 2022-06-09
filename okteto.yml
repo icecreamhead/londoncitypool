@@ -20,7 +20,7 @@ deploy:
 #   - https://github.com/okteto/sample
 # The dev section defines how to activate a development container
 # More info: https://www.okteto.com/docs/reference/manifest/#dev
- dev:
+dev:
    sample:
      image: okteto/dev:latest
      command: bash
