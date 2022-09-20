@@ -17,6 +17,7 @@
             {{ if eq .Params.page_type "iframe" }}{{ partial "iframe" . }}
             {{ else if eq .Params.page_type "gsheet" }}{{ partial "gsheet" . }}
             {{ else if eq .Params.page_type "form" }}{{ partial "form" . }}
+            {{ else if eq .Params.page_type "post" }}{{ partial "post" . }}
             {{ else }}{{ partial "missing-type" . }}{{ end }}
         </div><!-- #container -->
     </div><!-- #main -->
