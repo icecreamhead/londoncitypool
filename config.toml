@@ -86,16 +86,10 @@ canonifyURLs = true
     url   = "/hall-of-fame/"
     weight = 70
 
-#[[menu.main]]
-#    name  = "News"
-#    url   = "/news/agm-2022/"
-#    weight = 75
-#
-#[[menu.main]]
-#    name  = "AGM 2022"
-#    url   = "/news/agm-2022/"
-#    parent = "News"
-#    weight = 10
+[[menu.main]]
+    name  = "News"
+    url   = "/news/"
+    weight = 75
 
 [[menu.main]]
     name  = "Captain Resources"

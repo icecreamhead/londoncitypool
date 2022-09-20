@@ -1,0 +1,17 @@
+<div id="content">
+    <section id="post" class="post type-post status-publish format-standard has-post-thumbnail hentry">
+        <article>
+            <div class="article-inner">
+                {{ partial "article_header" . }}
+                {{ partial "article_footer" . }}
+            </div>
+            <div class="entry-content" itemprop="articleBody">
+                {{ .Content }}
+                <!-- -    {{ partial "share" . }}  -->
+            </div>
+            {{ partial "prev_next_post" . }}
+        </article>
+
+    </section>
+
+</div><!-- #content -->
