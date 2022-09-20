@@ -2,6 +2,7 @@
 title: AGM 2022 - Minutes
 date: 2022-09-20T10:29:00+01:00
 page_type: article
+summary: Minutes of the 2022 AGM
 ---
 
 # Annual General Meeting
