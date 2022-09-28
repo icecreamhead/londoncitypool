@@ -30,22 +30,25 @@
                             venue or simply use one of the existing ones. The venue must have at
                             least two good quality 8 ball pool tables. Contact us for further
                             details.</p>
-                        <img src="hurricane.jpg" style="text-align: center; width: 49%; display: inline;margin: 1px"/>
-                        <img src="spots.jpg" style="width: 49%; display: inline; margin: 1px"/>
                     </div>
                     <div id="content-right"
                          style="margin: auto; display: block; float: right; width: 43%; padding: 1%; text-align: right">
                         <h2>Committee</h2>
                         <table class="committee">
-                            <tr><td>Chairman</td><td>Josh Cooke</td></tr>
-                            <tr><td>Secretary</td><td>Richard Phillips</td></tr>
-                            <tr><td>Treasurer</td><td>Tristram Taylor</td></tr>
-                            <tr><td>Division 1 Director</td><td>Omeed Starmer</td></tr>
-                            <tr><td>Division 2 Director</td><td>-</td></tr>
-                            <tr><td>Interleague Secretary</td><td>Mark Rodericks</td></tr>
+                            <tr><td>Chairman</td><td>{{ .Params.chairman }}</td></tr>
+                            <tr><td>Secretary</td><td>{{ .Params.secretary }}</td></tr>
+                            <tr><td>Treasurer</td><td>{{ .Params.treasurer }}</td></tr>
+                            <tr><td>Division 1 Director</td><td>{{ .Params.div1 }}</td></tr>
+                            <tr><td>Division 2 Director</td><td>{{ .Params.div2 }}</td></tr>
+                            <tr><td>Interleague Secretary</td><td>{{ .Params.interleague }}</td></tr>
                             <tr><td>&nbsp;</td></tr>
                             <tr><td></td><td><a href="mailto:committee@londoncitypool.com">Contact Us</a></td></tr>
                         </table>
+                    </div>
+                    <div style="display: inline-block;text-align: center">
+                        <img src="/hurricane.jpg" alt="Hurricane Room Logo" style="height: 80px; display: inline;margin: 30px"/>
+                        <img src="/rileys.png" alt="Rileys Logo" style="height: 120px; display: inline; margin: 30px"/>
+                        <img src="/spots.jpg" alt="Spots & Stripes Logo" style="height: 80px; display: inline; margin: 30px"/>
                     </div>
                 </div>
             </div><!-- #content -->

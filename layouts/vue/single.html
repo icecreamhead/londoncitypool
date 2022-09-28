@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+{{ partial "header" . }}
+<body class="home blog logged-in admin-bar no-customize-support custom-background ">
+<div class="wrapper">
+    <header id="branding">
+        {{ partial "head" . }}
+        {{ partial "nav" . }}
+    </header>
+    <div id="main" class="container clearfix">
+        <div id="container">
+            <header class="entry-header">
+                <h2 class="entry-title" itemprop="name" style="margin-bottom: 5px;">
+                    {{ .Title }}
+                </h2>
+            </header>
+            {{ .Content }}
+            {{ safeHTML `
+            <div id="vapp">
+                <p>Hello World: {{display}}</p>
+                <colored-box class="red" v-show="display == 'redbox'" v-on:toggle="toggleBox()"></colored-box>
+                <colored-box class="green" v-show="display == 'greenbox'" v-on:toggle="toggleBox()"></colored-box>
+                <fixtures/>
+            </div>
+            ` }}
+
+
+
+        </div><!-- #container -->
+    </div><!-- #main -->
+</div>
+{{ .Scratch.Set "page_type" .Params.page_type }}
+{{ partial "footer.html" . }}
+</body>
+<script nonce="@addNonce">
+    const deref = v => "\{\{" + v + "\}\}";
+    Vue.component('ColoredBox', {
+        template: "<div class=\"box\">" +
+            "<button v-on:click=\"toggleMe()\">Toggle Now</button>" +
+            "</br>" +
+            "<button v-on:click=\"clicks++\">Clickety Click</button>" +
+            "</br></br>" +
+            "{{ safeHTML `{{ clicks }}` }}" +
+            "</div>",
+        data: function() {
+            return {
+                clicks: 0
+            }
+        },
+        methods: {
+            toggleMe() {
+                this.$root.toggleBox()
+            }
+        }
+    })
+    Vue.component('Fixtures', {
+        template: `
+            <div>
+            <h2>Fixtures</h2>
+            <table>
+                <tr v-for="(row, idx) in rows">
+                    <th v-show="idx == 0" v-for="val in row">
+                        ${deref('val')}
+                    </th>
+                    <td v-show="idx != 0" v-for="val in row">
+                        ${deref('val')}
+                    </td>
+              </tr>
+            </table>
+            </div>
+        `,
+        data: function() {
+            return {
+                rows: []
+            }
+        },
+        mounted () {
+            axios
+                .get('https://sheets.googleapis.com/v4/spreadsheets/1LU4pl2MJbiRFtsPO76JXb5fj3KI-25usVU3GzRewM4I/values/Sheet1?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+                .then(response => (this.rows = response.data.values))
+        }
+    })
+    const vueApp = new Vue({
+        el: '#vapp',
+        data: {
+            display: 'greenbox'
+        },
+        methods: {
+            toggleBox() {
+                this.display === 'redbox' ? this.display = 'greenbox' : this.display = 'redbox'
+            }
+        }
+    })
+</script>
+</html>

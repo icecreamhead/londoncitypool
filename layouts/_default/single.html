@@ -9,7 +9,7 @@
     </header>
     <div id="main" class="container clearfix">
         <div id="container">
-            {{ if ne .Params.page_type "article" }}
+            {{ if (and (ne .Params.page_type "article") (ne .Params.page_type "content")) }}
             <header class="entry-header">
                 <h2 class="entry-title" itemprop="name" style="margin-bottom: 5px;">
                     {{ .Title }}
@@ -20,6 +20,7 @@
             {{ else if eq .Params.page_type "gsheet" }}{{ partial "gsheet" . }}
             {{ else if eq .Params.page_type "form" }}{{ partial "form" . }}
             {{ else if eq .Params.page_type "article" }}{{ partial "article" . }}
+            {{ else if eq .Params.page_type "content" }}{{ partial "content" . }}
             {{ else }}{{ partial "missing-type" . }}{{ end }}
         </div><!-- #container -->
     </div><!-- #main -->
