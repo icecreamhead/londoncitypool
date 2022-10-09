@@ -27,8 +27,8 @@ canonifyURLs = true
     weight = 10
     
 [[menu.main]]
-    name  = "Leagues"
-    url   = "/leagues/"
+    name  = "League"
+    url   = "/league/"
     weight = 20
 
 [[menu.main]]
@@ -38,20 +38,20 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "Player Stats"
-    url   = "/stats/div1/"
+    url   = "/stats/"
     weight = 40
 
-[[menu.main]]
-    name  = "Division 1"
-    url   = "/stats/div1/"
-    parent = "Player Stats"
-    weight = 10
-
-[[menu.main]]
-    name  = "Division 2"
-    url   = "/stats/div2/"
-    parent = "Player Stats"
-    weight = 20
+#[[menu.main]]
+#    name  = "Division 1"
+#    url   = "/stats/div1/"
+#    parent = "Player Stats"
+#    weight = 10
+#
+#[[menu.main]]
+#    name  = "Division 2"
+#    url   = "/stats/div2/"
+#    parent = "Player Stats"
+#    weight = 20
 
 [[menu.main]]
     name  = "KO Competitions"
@@ -116,6 +116,6 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "Result Submission"
-    url   = "https://forms.gle/Gxcrsfo13oVggA5X7"
+    url   = "https://forms.gle/sCpvCuJrhWqHnhkA7"
     parent = "Captain Resources"
     weight = 40

@@ -1,6 +1,6 @@
 ---
 title: League Rules
-date: 2022-09-28
+date: 2022-10-09
 page_type: content
 nodateline: true
 noheaderlink: true
@@ -56,7 +56,7 @@ a) At least 4 team players are expected to arrive at the venue by 6.30pm, 7.00pm
 
 b) If any player is not at the venue prior to their designated frame being called to play, the opposing team may claim that frame.
 
-c) Ordinarily, matches should be played with at least 6 players on each team. However, a team may field as few as 4 players for a match if it isn't possible to field a full team. When fewer than 6 are playing, the opposition captain nominates players to fill in the gaps where the missing players would have played. Each player on the team may only play one extra frame in this manner. Therefore, if there are 4 players in the team, two will play an extra singles, and the remaining doubles is played by the final two players. If there are 5 on the team, then just 3 would play an extra frame. Teams will incur a 1 point penalty for fielding only 4 players (section 2.5), and individual player stats are not recorded for additional frames played.
+c) Ordinarily, matches should be played with at least 6 players on each team. However, a team may field as few as 4 players for a match if it isn't possible to field a full team. When fewer than 6 are playing, the opposition captain nominates players to fill in the gaps where the missing players would have played. Each player on the team may only play one extra frame in this manner. Therefore, if there are 4 players in the team, all four will play an extra singles frame and the final doubles frame is forfeited. If there are 5 on the team, then just 3 players would play an extra frame (two play singles and one plays doubles). Teams will incur a 1 point penalty for fielding only 4 players (section 2.5), and individual player stats are not recorded for additional frames played.
 
 d) Substitute players can be used in the Reverse Singles & Doubles, but they must be declared to the opposing captain before that round of matches commences.
 
@@ -69,13 +69,15 @@ a) Before the start of the match, the players for the first set of 6 singles are
 * Next, the home team captain will pick the players from the away team to complete any gaps in the sheet due to them being short on players.
 * Finally the away team captain does the same.
 
-b) Before starting the second round of six singles frames, the procedure from 2.2 (a) is repeated. As per rule 2.3 (d) this does not need to wait for the completion of all of the first six frames.
+b) Before starting the second round of six singles frames, the procedure from 2.2 (a) is repeated. In the reverse round of singles, players are to stay in their same numbered position, unless they are being substituted. As per rule 2.3 (d) this does not need to wait for the completion of all of the first six frames.
 
-c) On completion of all singles frames, the home team writes down their doubles pairings, followed by the away team captain. If either team is short on players, they leave gaps in the third pairing. Finally, the home team nominates player(s) from the away team to make up the final doubles pairing, followed by the away team completing the home teams doubles pairings.
+c) On completion of all singles frames, the home team writes down their doubles pairings, followed by the away team captain. If either team is short on players, they leave gaps in the third pairing. Finally, the home team nominates the player from the away team to make up the final doubles pairing, followed by the away team completing the home team's doubles pairings.
 
 d) Any substitutions for subsequent sections (reverse singles and doubles) to be notified to the opposing captain prior to the start of that section.
 
 e) Scores will only be accepted on the officially provided scoresheets and full names must be provided at least once so it is clear to the Division Directors which team members are participating.
+
+f) Both participating team captains must sign the scoresheet on completion of the match.
 
 ### 2.3 Match play
 
@@ -89,15 +91,26 @@ d) Frames are played in order, as specified on the team sheet, on the first avai
 
 ### 2.4 Doubles
 
-a) Referees may introduce a shot clock where it is deemed that players are taking excessive time during visits; at the request of any participant of the frame.  If the shot clock is used, pairings will be given one minute to confer followed by twenty seconds to play the shot. The referee will call the end the one minute conferring time. If the shot is not completed within one minute twenty seconds, the referee will award a standard foul to the opposing team.
+a) Doubles frames are played in an alternate shot (scotch) format.
 
-b) Referees may award standard fouls where players are clearly and repeatedly attempting to influence the next shot following their visit.  Players should step away from the table after their shots and not breach coaching rules.
+b) The pair winning the lag may choose which of their players will break, and every shot thereafter must alternate player.
+
+c) If a players plays a shot out of turn, this will result in a standard foul.
+
+d) Following a legal break where one or more balls are potted, the breaking pair may have a discussion in the normal way as if it were prior to the first shot of their visit. Either of the players in control of the table may nominate their preferred set of balls, so long as it is deemed a clear nomination by the referee.
+
+e) Referees may introduce a shot clock where it is deemed that players are taking excessive time during visits; at the request of any participant of the frame. If the shot clock is used, pairings will be given one minute to confer followed by twenty seconds to play the shot.\
+The referee will call the end of the one minute conferring time.\
+If the shot is not completed within one minute twenty seconds, the referee will award a standard foul to the opposing team.\
+Rule 2.4 (e) is only enforced for the first shot of a visit.
+
+f) Discussion is only allowed prior to the first shot of a visit. Referees may award standard fouls where players are clearly and repeatedly attempting to influence the next shot following their visit.  Players should step away from the table after their shots and not breach coaching rules.
 
 ### 2.5 Result scoring
 
 a) In calculating the final score, each frame is worth one, resulting in the match being best of fifteen.
 
-b) Completed scoresheets submitted via the website by the winning team captain to the appropriate division director (copied to the other captain) by the end of the following week or a zero score will be entered.
+b) The captain of the winning team must submit the dompleted match scoresheets via the website by the end of the following week, otherwise a zero score will be recorded.
 
 c) Points are allocated to teams based on the following:
 1. Win (13+ frames) – 5 points.

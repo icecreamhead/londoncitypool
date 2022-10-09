@@ -75,9 +75,14 @@
             }
         },
         mounted () {
-            axios
-                .get('https://sheets.googleapis.com/v4/spreadsheets/1LU4pl2MJbiRFtsPO76JXb5fj3KI-25usVU3GzRewM4I/values/Sheet1?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
-                .then(response => (this.rows = response.data.values))
+            console.log('mounted')
+            // axios
+            //     .get('https://sheets.googleapis.com/v4/spreadsheets/1LU4pl2MJbiRFtsPO76JXb5fj3KI-25usVU3GzRewM4I/values/Sheet1?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+            //     .then(response => (this.rows = response.data.values))
+            fetch('https://sheets.googleapis.com/v4/spreadsheets/1ixjSVi7oDpcJEaa7lY1BnFI_RqJtn3fX7cyy7vJdyRI/values/Leagues?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+            // fetch('https://sheets.googleapis.com/v4/spreadsheets/1LU4pl2MJbiRFtsPO76JXb5fj3KI-25usVU3GzRewM4I/values/Sheet1?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+                .then((response) => response.json())
+                .then((data) => this.rows = data.values);
         }
     })
     const vueApp = new Vue({
