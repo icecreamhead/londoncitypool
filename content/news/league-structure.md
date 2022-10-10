@@ -1,6 +1,6 @@
 ﻿---
 title: 2022/23 League Structure
-date: 2022-10-09
+date: 2022-10-10
 page_type: article
 summary: The introduction of a new league structure for the 2022/23 season
 ---
@@ -40,3 +40,5 @@ The Committee came to this decision because:
 * If a team were to withdraw from a two division set up, this would leave remaining teams with even fewer matches.
 * League fees are being reintroduced from this season, and to justify these the season should be of a satisfactory length. 
 * Maintaining a May finish to the league and KO competitions will allow us to trial a new Summer League/Season. This was raised at the AGM as something people/teams would be interested in.
+
+Update: A 12th team (Imperial) has now joined the league. All of the above information is still broadly applicable, except that all teams will play 16 matches, since both the Championship and the Shield will contain 6 teams.

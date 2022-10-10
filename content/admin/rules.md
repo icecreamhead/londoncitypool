@@ -110,7 +110,7 @@ f) Discussion is only allowed prior to the first shot of a visit. Referees may a
 
 a) In calculating the final score, each frame is worth one, resulting in the match being best of fifteen.
 
-b) The captain of the winning team must submit the dompleted match scoresheets via the website by the end of the following week, otherwise a zero score will be recorded.
+b) The captain of the winning team must submit the completed match scoresheets via the website by the end of the following week, otherwise a zero score will be recorded.
 
 c) Points are allocated to teams based on the following:
 1. Win (13+ frames) – 5 points.

@@ -14,7 +14,7 @@ canonifyURLs = true
     disable_mathjax = true # set to true to disable MathJax
 
     # Format dates with Go's time formatting
-    date_format = "02 January, 2006"
+    date_format = "02 January 2006"
 
     # Add custom assets with their paths relative to the static folder
     custom_css = []
