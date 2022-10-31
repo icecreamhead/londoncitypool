@@ -42,3 +42,5 @@ The Committee came to this decision because:
 * Maintaining a May finish to the league and KO competitions will allow us to trial a new Summer League/Season. This was raised at the AGM as something people/teams would be interested in.
 
 Update: A 12th team (Imperial) has now joined the league. All of the above information is still broadly applicable, except that all teams will play 16 matches, since both the Championship and the Shield will contain 6 teams.
+
+Update #2: We're back down to 11 teams as Bee & Cue have unfortunately dropped out of the league.

@@ -1,4 +1,7 @@
 {{ if isset .Params "iframe_url" }}
+{{ if isset .Params "alt_link" }}
+<p>Click <a href="{{ .Params.iframe_url }}" target="_blank">here</a> if you're having trouble accessing the form below.</p>
+{{ end }}
 <iframe width="{{ .Params.iframe_width }}"
         height="{{ .Params.iframe_height }}"
         src="{{ .Params.iframe_url }}"/>

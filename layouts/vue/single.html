@@ -59,13 +59,19 @@
             <h2>Fixtures</h2>
             <table>
                 <tr v-for="(row, idx) in rows">
-                    <th v-show="idx == 0" v-for="val in row">
-                        ${deref('val')}
-                    </th>
-                    <td v-show="idx != 0" v-for="val in row">
-                        ${deref('val')}
-                    </td>
-              </tr>
+                    <template v-if="row.length > 0">
+                        <th v-if="idx == 0" v-for="val in row">
+                            ${deref('val')}
+                        </th>
+                        <td v-if="idx != 0" v-for="val in row">
+                            ${deref('val')}
+                        </td>
+                        <span v-for="col in 8">${deref('row[col]')}</span>
+                    </template>
+                    <template v-else>
+                        <td v-for="col in 8">&nbsp;</td>
+                    </template>
+                </tr>
             </table>
             </div>
         `,
@@ -79,8 +85,8 @@
             // axios
             //     .get('https://sheets.googleapis.com/v4/spreadsheets/1LU4pl2MJbiRFtsPO76JXb5fj3KI-25usVU3GzRewM4I/values/Sheet1?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
             //     .then(response => (this.rows = response.data.values))
-            fetch('https://sheets.googleapis.com/v4/spreadsheets/1ixjSVi7oDpcJEaa7lY1BnFI_RqJtn3fX7cyy7vJdyRI/values/Leagues?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
-            // fetch('https://sheets.googleapis.com/v4/spreadsheets/1LU4pl2MJbiRFtsPO76JXb5fj3KI-25usVU3GzRewM4I/values/Sheet1?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+            // fetch('https://sheets.googleapis.com/v4/spreadsheets/1ixjSVi7oDpcJEaa7lY1BnFI_RqJtn3fX7cyy7vJdyRI/values/Leagues?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+            fetch('https://sheets.googleapis.com/v4/spreadsheets/1ixjSVi7oDpcJEaa7lY1BnFI_RqJtn3fX7cyy7vJdyRI/values/Fixtures?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
                 .then((response) => response.json())
                 .then((data) => this.rows = data.values);
         }
