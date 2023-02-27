@@ -82,6 +82,12 @@ canonifyURLs = true
     weight = 60
 
 [[menu.main]]
+    name  = "Registered Players"
+    url   = "/registered-players/"
+    parent = "Teams"
+    weight = 10
+
+[[menu.main]]
     name  = "Hall of Fame"
     url   = "/hall-of-fame/"
     weight = 70
