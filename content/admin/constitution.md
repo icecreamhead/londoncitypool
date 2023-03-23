@@ -1,5 +1,5 @@
 ---
-title: London City Pool League - Constitution
+title: Constitution
 date: 2023-03-23
 page_type: content
 nodateline: true
