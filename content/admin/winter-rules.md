@@ -1,6 +1,6 @@
 ---
-title: League Rules
-date: 2022-10-09
+title: Winter League Rules
+date: 2023-03-23
 page_type: content
 nodateline: true
 noheaderlink: true

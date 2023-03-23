@@ -98,30 +98,58 @@ canonifyURLs = true
     weight = 75
 
 [[menu.main]]
-    name  = "Captain Resources"
+    name  = "Resources"
     url   = "/admin/rules"
     weight = 80
 
 [[menu.main]]
-    name  = "Rules"
-    url   = "/admin/rules"
-    parent = "Captain Resources"
+    name  = "Constitution"
+    url   = "/admin/constitution"
+    parent = "Resources"
     weight = 10
 
 [[menu.main]]
-    name  = "Scoresheet"
+    name  = "Winter League"
+    parent = "Resources"
+    weight = 20
+
+[[menu.main]]
+    name  = "Winter League Rules"
+    url   = "/admin/winter-rules"
+    parent = "Winter League"
+    weight = 10
+
+[[menu.main]]
+    name  = "Winter League Scoresheet"
     url   = "/citypoolleague_resultsheet.pdf"
-    parent = "Captain Resources"
+    parent = "Winter League"
+    weight = 20
+
+[[menu.main]]
+    name  = "Summer League"
+    parent = "Resources"
+    weight = 30
+
+[[menu.main]]
+    name  = "Summer League Rules"
+    url   = "/admin/summer-rules"
+    parent = "Summer League"
+    weight = 10
+
+[[menu.main]]
+    name  = "Summer League Scoresheet"
+    url   = "/citypoolleague_resultsheet.pdf"
+    parent = "Summer League"
     weight = 20
 
 [[menu.main]]
     name  = "Player Registration"
     url   = "/admin/forms/registration"
-    parent = "Captain Resources"
-    weight = 30
+    parent = "Resources"
+    weight = 40
 
 [[menu.main]]
     name  = "Result Submission"
     url   = "https://forms.gle/sCpvCuJrhWqHnhkA7"
-    parent = "Captain Resources"
-    weight = 40
+    parent = "Resources"
+    weight = 50
