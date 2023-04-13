@@ -57,6 +57,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 embed,iframe,object {
 	max-width: 100%;
 }
+iframe {
+	background:url(/loading.gif) center top no-repeat;
+}
 /* =Global
 -----------------------------------------------*/
 body,input,textarea,article {
