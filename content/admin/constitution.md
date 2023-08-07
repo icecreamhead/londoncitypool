@@ -115,7 +115,7 @@ The removed Committee Member cannot stand for another Committee position until t
 * To manage the choosing of the squad of players for each Interleague team representing The League
 ### 6.7 League Development Director
 * To attract new teams to The League
-* To regsiter new venues to The League
+* To register new venues to The League
 * To find, and manage the ongoing relationship with, sponsors of The League
 ### 6.8 Financial Matters and Bank Accounts
 * The three main officers of the league (Chair, Secretary, Treasurer) will be responsible for the finances of The League, and may be the signatories on any League bank accounts.
