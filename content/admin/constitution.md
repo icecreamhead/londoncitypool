@@ -111,7 +111,7 @@ The removed Committee Member cannot stand for another Committee position until t
 ### 6.6 Interleague Director
 * To manage the enrolment of a team, or teams, representing The League with the relevant Interleague organisation
 * To attend, or ensure appropriate League attendance, of any meetings with associated Interleague organisations
-* To manage the election/choosing of the Interleague Team captain(s)
+* To manage the appointment of the Interleague Team captain(s)
 * To manage the choosing of the squad of players for each Interleague team representing The League
 ### 6.7 League Development Director
 * To attract new teams to The League
