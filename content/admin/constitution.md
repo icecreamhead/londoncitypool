@@ -59,6 +59,7 @@ The League shall have the following Committee positions:
 * League Director (of which there may be up to one per division present in the League)
 * Knockout Tournaments Director
 * Interleague Director
+* League Development Director
 ### 5.2 Terms
 A Member may hold at most two Committee positions at one time.\
 All Committee positions are held for the period from one AGM to the next.
@@ -111,8 +112,12 @@ The removed Committee Member cannot stand for another Committee position until t
 * To manage the enrolment of a team, or teams, representing The League with the relevant Interleague organisation
 * To attend, or ensure appropriate League attendance, of any meetings with associated Interleague organisations
 * To manage the election/choosing of the Interleague Team captain(s)
-* To manage the choosing of the squad of players for each Interleague team representing The League (e.g. trials)
-### 6.7 Financial Matters and Bank Accounts
+* To manage the choosing of the squad of players for each Interleague team representing The League
+### 6.7 League Development Director
+* To attract new teams to The League
+* To regsiter new venues to The League
+* To find, and manage the ongoing relationship with, sponsors of The League
+### 6.8 Financial Matters and Bank Accounts
 * The three main officers of the league (Chair, Secretary, Treasurer) will be responsible for the finances of The League, and may be the signatories on any League bank accounts.
 * Any expenses of the league must be approved by a minimum of two of the main officers.
 ## 7 - Interleague
@@ -122,8 +127,8 @@ Each Interleague team squad shall contain 14 players. Membership of this squad s
 Each squad shall have a captain, responsible for the coordination of team matches, picking match-day squads, and general day to day running of the team.\
 The captain shall be chosen by the Interleague Director at the start of a season. The incumbent captain may be re-picked to carry on the role.
 ### 7.2 Determining squads
-The determination of the Interleague squads shall happen in a manner at the discretion of the Interleague Director. This may change season to season depending on the number of people interested in Interleague participation.\
-Should the number of people interested require there to be two teams entered, trials must take place before each Interleague season to determine any changes to the squads. Those required to trial is at the discretion of the Interleague Director.
+The determination of the Interleague squads shall happen in a manner at the discretion of the Interleague Director. This may change season to season depending on the number of people interested in Interleague participation.
+Should the number of people interested require there to be two teams entered, players wishing to be considered for the “first” team must agree in principle to make themselves available for 50% of the teams matches and the national finals teams should the teams qualify. Players not wishing to participate in these events will by default be placed in the “second” team.
 ### 7.3 Interleague Fees
 It shall be the responsibility of The League to pay any affiliation and participation/entry fees required of Interleague teams to enable them to play Interleague competitions (Regional and National).\
 It shall be the responsibility of players to pay any affiliation and participation/entry fees required of individuals to enable them to play Interleague competitions (Regional and National).

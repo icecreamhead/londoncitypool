@@ -10,43 +10,23 @@ noheaderlink: true
 
 ### 1.1 Arranging Matches
 
-a) The home team captain will contact the opposing captain (and deputy if known) at least 2 weeks prior to the proposed match date. Two dates must be offered from the scheduled match week. Only Monday to Thursday may be offered initially. Fridays can be used only if no other dates are mutually acceptable and both captains agree. The visiting captain must accept or reject either of the proposed dates by the end of the following day.
+a) Matches are held on Wednesday evenings according to a fixture list released at the start of the season.
 
-b) If the visiting captain rejects both of the proposed dates, then the home team captain has the option of either claiming a default victory against the visiting team or offering a postponement.
+b) Postponements of fixtures are not permitted, except in extreme circumstances as determined by the Committee. For example, but not limited to - if train strikes are scheduled meaning teams cannot attend venues. In these situations individual matches, or whole gameweeks, may be reorganised by collaboration between Committee and teams.
 
-c) If the visiting captain accepts one of the dates, then the match should be played as scheduled. However, if having agreed a scheduled date, either one of the team captains has to postpone the match, then the other team captain will have the option of either claiming a default victory against the other team or offering a postponement.
+c) The home team will cover the full cost of the match, including table hire and refreshments (snacks/sandwiches).
 
-d) Any postponements must be communicated to the Division Director by email, with the opposing captain copied in.
+d) The Committee will liaise with venues to ensure that an appropriate number of tables are booked at each location.
 
-e) The home team will cover the full cost of the match, including table hire and refreshments (snacks/sandwiches).
+### 1.2 Communications
 
-### 1.2 Postponements
+a) The league requires that all team captains have in place a procedure to ensure they can be contacted regarding league matters, and they are responded to in a timely manner.
 
-a) Teams are only allowed to have 2 outstanding ‘postponed’ matches on their record at any one time.
+### 1.3 Team Knockouts
 
-b) If teams have more than 2 outstanding matches, then any further postponed match will not be permitted and that match will be recorded as a defaulted match where a team exceeds 2 outstanding matches. If both teams would exceed 2 outstanding matches, then the match will be recorded as defaulted on both sides.
+a) Arranging team knockouts follows the same rules as organising league matches. The team listed first becomes the Home Team.
 
-c) If a postponement is agreed, both the home team and visiting team must inform the relevant Division Director.
-
-d) An outstanding match will be counted against each team, irrespective of whether they are the team who required the postponement.
-
-e) If a postponement is agreed, then the postponed match must be scheduled and played within one month of the end of the week it was scheduled to be played.
-
-f) The home team must offer the visiting team a further 2 dates, at least 2 weeks prior to the proposed match date and should copy in the relevant division director into the email.
-
-g) If the home team does not adhere to this, they will default the match. If the home team does adhere to this, then the visiting captain must accept either of the proposed dates by the end of the following day. If the visiting team does not accept one of the proposed dates, then they will default the match.
-
-h) All matches must be completed within one month of the final league match week of the season.
-
-### 1.3 Communications
-
-a) The league requires that all team captains have in place a procedure to ensure that emails are responded to in a timely manner. If at any stage, a team has not responded to emails by the relevant deadline, the other team should contact the Division Director and Chair who will intervene.
-
-b) If a team does not respond to emails, it is within the Committee’s discretion to call a default victory against that team for failure to adhere to the rules and associated deadlines.
-
-### 1.4 Team Knockouts
-
-a) Arranging team knockouts follows exactly the same rules as arranging matches above. The team listed first becomes the Home Team.
+b) The KO Director will attempt to book tables at home venues and liaise with the teams.
 
 ## 2 Matchday
 
@@ -56,17 +36,19 @@ a) At least 4 team players are expected to arrive at the venue by 6.30pm, 7.00pm
 
 b) If any player is not at the venue prior to their designated frame being called to play, the opposing team may claim that frame.
 
-c) Ordinarily, matches should be played with at least 6 players on each team. However, a team may field as few as 4 players for a match if it isn't possible to field a full team. When fewer than 6 are playing, the opposition captain nominates players to fill in the gaps where the missing players would have played. Each player on the team may only play one extra frame in this manner. Therefore, if there are 4 players in the team, all four will play an extra singles frame and the final doubles frame is forfeited. If there are 5 on the team, then just 3 players would play an extra frame (two play singles and one plays doubles). Teams will incur a 1 point penalty for fielding only 4 players (section 2.5), and individual player stats are not recorded for additional frames played.
+c) Ordinarily, matches should be played with at least 6 players on each team. However, a team may field 5 players for a match if it isn’t possible to field a full team. When a team play with 5 players, the opposition captain nominates players to fill in the gaps where the missing player would have played. Each player on the team may only play one extra frame in this manner. When there are 5 on the team, 3 players would play an extra frame (two play singles and one plays doubles).
 
 d) Substitute players can be used in the Reverse Singles & Doubles, but they must be declared to the opposing captain before that round of matches commences.
+
+e) Teams will incur a 1 point league penalty for fielding only 5 players and individual player stats are not recorded for additional frames played.
 
 ### 2.2 Team sheets
 
 a) Before the start of the match, the players for the first set of 6 singles are declared as follows:
 
-* The home team captain will write down their players to play in the first six singles frames, plus any substitutes that may appear in the match. If they have fewer than 6 players, they will leave position 6 empty on the scoresheet first, followed by 5 if required.
+* The home team captain will write down their players to play in the first six singles frames, plus any substitutes that may appear in the match. If they have fewer than 6 players, they will leave position 6 empty on the scoresheet.
 * Then the away team captain will complete the same task.
-* Next, the home team captain will pick the players from the away team to complete any gaps in the sheet due to them being short on players.
+* Next, the home team captain will pick the player from the away team to complete any gap in the sheet due to them being a player short.
 * Finally the away team captain does the same.
 
 b) Before starting the second round of six singles frames, the procedure from 2.2 (a) is repeated. In the reverse round of singles, players are to stay in their same numbered position, unless they are being substituted. As per rule 2.3 (d) this does not need to wait for the completion of all of the first six frames.
@@ -75,19 +57,21 @@ c) On completion of all singles frames, the home team writes down their doubles 
 
 d) Any substitutions for subsequent sections (reverse singles and doubles) to be notified to the opposing captain prior to the start of that section.
 
-e) Scores will only be accepted on the officially provided scoresheets and full names must be provided at least once so it is clear to the Division Directors which team members are participating.
+e) Scores will only be accepted by submission through RackemApp.
 
-f) Both participating team captains must sign the scoresheet on completion of the match.
+f) Both participating team captains must confirm the scoresheet on completion of the match.
 
 ### 2.3 Match play
 
-a) All frames are played to [World Rules](https://www.epa.org.uk/downloads/rules/Rules_World_Rules_2019.pdf).
+a) All frames are played to [International Rules](https://www.epa.org.uk/rules/international_2c.php#gsc.tab=0).
 
-b) The home team will referee one table, the away team will referee the second.
+b) The home team will referee one table and time on the other. The away team will complete the opposite role to the home team on each table..
 
 c) A lag is carried out at the start of every frame to determine which player will break.
 
 d) Frames are played in order, as specified on the team sheet, on the first available table.
+
+e) Where insufficient tables are available at a venue for all matches to be played, teams can play on one table and expand to additional tables as they become available from other matches.
 
 ### 2.4 Doubles
 
@@ -95,14 +79,14 @@ a) Doubles frames are played in an alternate shot (scotch) format.
 
 b) The pair winning the lag may choose which of their players will break, and every shot thereafter must alternate player.
 
-c) If a players plays a shot out of turn, this will result in a standard foul.
+c) If a player plays a shot out of turn, this will result in a standard foul.
 
-d) Following a legal break where one or more balls are potted, the breaking pair may have a discussion in the normal way as if it were prior to the first shot of their visit. Either of the players in control of the table may nominate their preferred set of balls, so long as it is deemed a clear nomination by the referee.
+d) Following a legal break where one or more balls are potted, the breaking pair may have a discussion in the normal way as if it were prior to the first shot of their visit.
 
-e) Referees may introduce a shot clock where it is deemed that players are taking excessive time during visits; at the request of any participant of the frame. If the shot clock is used, pairings will be given one minute to confer followed by twenty seconds to play the shot.\
-The referee will call the end of the one minute conferring time.\
-If the shot is not completed within one minute twenty seconds, the referee will award a standard foul to the opposing team.\
-Rule 2.4 (e) is only enforced for the first shot of a visit.
+e) For the first shot of a visit in a doubles frame - the shot clock is set to two minutes to enable discussion.
+A warning is provided to players when there are 30 seconds remaining of the turn.
+A countdown from 5 seconds is provided in the standard manner.
+All other shots in a visit are played to the usual shot clock format.
 
 f) Discussion is only allowed prior to the first shot of a visit. Referees may award standard fouls where players are clearly and repeatedly attempting to influence the next shot following their visit.  Players should step away from the table after their shots and not breach coaching rules.
 
@@ -110,25 +94,25 @@ f) Discussion is only allowed prior to the first shot of a visit. Referees may a
 
 a) In calculating the final score, each frame is worth one, resulting in the match being best of fifteen.
 
-b) The captain of the winning team must submit the completed match scoresheets via the website by the end of the following week, otherwise a zero score will be recorded.
-
-c) Points are allocated to teams based on the following:
+b) Points are allocated to teams based on the following:
 1. Win (13+ frames) – 5 points.
 2. Win (10 to 12 frames) – 4 points.
 3. Win (8 or 9 frames) – 3 points.
 4. Loss by 1 frames (i.e. score of 7-8) – 1 point.
 5. Default – 4 points awarded to the non-defaulting team as a 10-0 win, with 2 points deducted from the defaulting team.
-6. Any team playing with 4 players will incur a one point penalty in addition to, and regardless of the result.
+6. 1 point deduction for a team playing with 5 players.
 
 ## 3 League placements
 
 ### 3.1 Singles rankings
 
-a) To qualify for the league averages trophies, a player must have participated in at least 75% of the matches played.
+a) To qualify for the singles rankings trophy, a player must have participated in at least 75% of the matches played.
 
 b) Singles rankings will be based on total singles frames won in league play. (Doubles frames in league matches and singles frames in Team KO matches are not included.)
 
 c) Ties for singles rankings will be broken by percentage of frames won.
+
+d) A frame win is awarded to a player who wins a defaulted frame.
 
 ### 3.2 Team rankings
 
@@ -149,13 +133,24 @@ c) If 1 team withdraws from division 1 during the course of the season, they wil
 
 d) Prior to the start of the new season, the Committee has the discretion to promote additional teams from division 2 to prevent imbalance.
 
+## 3.4 Trophies
+
+a) The Committee shall organise purchase of trophies for winners of competitions in the following configuration:
+* League winners (up to 8 trophies; per division)
+* Team KO winners (up to 8 trophies)
+* Singles KO winners and runners up
+* Doubles KO winners and runners up
+* Top Player (per division)
+
 ## 4 Registering teams
 
 ### 4.1 Registration
 
-a) Teams must register their interest to take part in a season prior to the start of that season.
+a) Teams must register to take part in a season prior to the start of that season.
 
-b) Invoices for league fees will be sent out in due course after the start of the season. These should be paid promptly otherwise the committee may eject the team from the league.
+b) Invoices for league fees will be sent out following submission of entry to the league season. These must be paid prior to the beginning of the season and release of fixtures. Failure to do so will result in a team not registering for the season.
+
+c) By registering for the winter league, a teams agrees to send representation to the AGM. This requires one person from the team to vote on behalf of their team (this can be done by proxy). Any team that does not have representation at the AGM, was registered in the previous season, and wishes to register for the following season, will have a three penalty applied for non-representation.
 
 ### 4.2 Withdrawal
 
@@ -169,13 +164,15 @@ b) Regarding the results of matches that have been completed by the withdrawing 
 
 ### 5.1 Registration
 
-a) Players are registered by providing full names to the committee. Ideally this is via the online form but emails/texts are also permissible.
+a) Players are registered by the captain registering them on RackemApp.
 
 b) All players a team wishes to play for their team during a season must be registered with the league in advance of the player participating in their first match.
 
-c)  If a team plays an unregistered player in a match, any frames that player is involved in (singles and doubles) will be awarded to the opposing team.
+c) If a team plays an unregistered player in a match, any frames that player is involved in (singles and doubles) will be awarded to the opposing team.
 
 d) A player once registered for one team is not allowed to play for another team during that season, except in the case where its team withdraws and its results are disregarded.
+
+e) A team may register a maximum of 14 players for a season. If a team wishes to register a 15th player, they may only do so by ‘releasing’ a registered player who has not played for them this season.
 
 ## 6 Committee Rulings
 
