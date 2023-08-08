@@ -1,3 +1,6 @@
 public/
 /.idea/
 resources
+
+# Local Netlify folder
+.netlify
