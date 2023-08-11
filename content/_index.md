@@ -1,10 +1,10 @@
 ---
 title: Home
-date: 2017-06-07T15:36:00+05:30
+date: 2023-08-11
 chairman: Josh Cooke
-secretary: Richard Phillips
-treasurer: Tristram Taylor
-div1: Omeed Starmer
-div2: "-"
-interleague: Mark Rodericks
+secretary: Omeed Starmer
+treasurer: Richard Phillips
+league: Omeed Starmer
+development: Elena Ionescu
+interleague: Elena Ionescu
 ---
