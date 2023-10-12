@@ -1,29 +1,12 @@
-const fetch = require('node-fetch')
+const API_ENDPOINT = 'https://cat-fact.herokuapp.com/facts';
 
-const handler = async function () {
+export default async (request, context) => {
   try {
-    const response = await fetch('https://icanhazdadjoke.com', {
-      headers: { Accept: 'application/json' },
-    })
-    if (!response.ok) {
-      // NOT res.status >= 200 && res.status < 300
-      return { statusCode: response.status, body: response.statusText }
-    }
-    const data = await response.json()
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ msg: data.joke }),
-    }
+    const response = await fetch(API_ENDPOINT);
+    const data = await response.json();
+    return Response.json({ data });
   } catch (error) {
-    // output to netlify function log
-    console.log(error)
-    return {
-      statusCode: 500,
-      // Could be a custom message or object i.e. JSON.stringify(err)
-      body: JSON.stringify({ msg: error.message }),
-    }
+    console.log(error);
+    return Response.json({ error: 'Failed fetching data' }, { status: 500 });
   }
-}
-
-module.exports = { handler }
+};
