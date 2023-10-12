@@ -4,6 +4,7 @@ const key = process.env.API_KEY
 const path = `https://app.londoncitypool.com/api/seasons?apiKey=${key}`
 
 const handler = async function () {
+  //console.log(path)
   try {
     const response = await fetch(path, {
       headers: { Accept: 'application/json' },
@@ -14,9 +15,10 @@ const handler = async function () {
     }
     const data = await response.json()
 
+    //console.log("got data")
     return {
       statusCode: 200,
-      body: JSON.stringify({ msg: data.joke }),
+      body: data
     }
   } catch (error) {
     // output to netlify function log
