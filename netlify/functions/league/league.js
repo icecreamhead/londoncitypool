@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
 
 const key = process.env.API_KEY
 const path = `https://app.londoncitypool.com/api/seasons?apiKey=${key}`
