@@ -29,6 +29,9 @@ HUGO_VERSION = "0.103.1"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
+[functions]
+  node_bundler = "esbuild"
+
 [[headers]]
 for = "/**"
 [headers.values]
