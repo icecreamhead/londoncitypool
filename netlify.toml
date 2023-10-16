@@ -30,7 +30,7 @@ HUGO_VERSION = "0.103.1"
 HUGO_ENABLEGITINFO = "true"
 
 [functions]
-  node_bundler = "esbuild"
+node_bundler = "esbuild"
 
 [[headers]]
 for = "/**"
