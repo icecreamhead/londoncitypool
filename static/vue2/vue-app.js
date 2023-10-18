@@ -6,7 +6,7 @@ Vue.component('LeagueStatus', {
         }
     },
     mounted () {
-        fetch('http://londoncitypool.com/.netlify/functions/league')
+        fetch('https://londoncitypool.com/.netlify/functions/league')
 //        fetch('http://localhost:9999/.netlify/functions/league')
             .then(response => response.json())
             .then(data => this.season = data.Name);
@@ -24,7 +24,7 @@ Vue.component('ActivePlayers', {
     </div>`,
     data: () => ({ players: [] }),
     mounted () {
-        fetch('http://londoncitypool.com/.netlify/functions/active-players')
+        fetch('https://londoncitypool.com/.netlify/functions/active-players')
 //        fetch('http://localhost:9999/.netlify/functions/active-players')
             .then(response => response.json())
             .then(data => this.players = data);
