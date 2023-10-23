@@ -1,33 +1,58 @@
-Vue.component('LeagueStatus', {
-    template: `<div>The current season is {{ season }}!</div>`,
-    data: function() {
-        return {
-            season: "<loading>"
-        }
-    },
+const apiHost = location.hostname === 'localhost' ? 'http://localhost:9999' : 'https://londoncitypool.com'
+
+const ActivePlayers = Vue.component('ActivePlayers', {
+    template: `<div>
+      </br>
+      <table>
+          <tr v-for="player in players">
+              <td>{{ player }}</td>
+          </tr>
+      </table>
+    </div>`,
+    data: () => ({
+        players: []
+    }),
     mounted () {
-        fetch('https://londoncitypool.com/.netlify/functions/league')
-//        fetch('http://localhost:9999/.netlify/functions/league')
+        fetch(`${apiHost}/.netlify/functions/active-players?season=${this.season}`)
             .then(response => response.json())
-            .then(data => this.season = data.Name);
+            .then(data => this.players = data);
+    },
+    props: {
+        season: Number
     }
 })
 
-Vue.component('ActivePlayers', {
+const LeagueStatus = Vue.component('LeagueStatus', {
     template: `<div>
-      <h2>Active Players</h2>
-      <div>
-        <ul v-for="player in players">
-            <li>{{ player }}</li>
-        </ul>
-      </div>
+        <span>
+            Choose a season to view the players who have played in that season:
+            <select name="season-select" id="season-select-id" @change="onChange($event)">
+                <option v-for="s in seasons" :value="s.Id">{{ s.Name }}</option>
+            </select>
+        </span>
+        <active-players v-if="id" :season="id" :key="id"></active-players>
     </div>`,
-    data: () => ({ players: [] }),
+    data: () => ({
+//        season: "<loading>",
+        id: null,
+        seasons: []
+    }),
     mounted () {
-        fetch('https://londoncitypool.com/.netlify/functions/active-players')
-//        fetch('http://localhost:9999/.netlify/functions/active-players')
+        fetch(`${apiHost}/.netlify/functions/league`)
             .then(response => response.json())
-            .then(data => this.players = data);
+            .then(data => {
+                this.seasons = JSON.parse(data).sort((a,b) => b.Id-a.Id);
+                this.id = this.seasons[0].Id;
+            });
+
+    },
+    components: {
+        ActivePlayers
+    },
+    methods: {
+        onChange(event) {
+            this.id = parseInt(event.target.value)
+        }
     }
 })
 

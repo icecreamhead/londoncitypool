@@ -1,6 +1,7 @@
- const path = `https://app.londoncitypool.com/api/league/results/74?apiKey=${process.env.API_KEY}`
-
-const handler = async function () {
+const handler = async function (event) {
+  const season = (event.queryStringParameters.season) ? event.queryStringParameters.season : 74
+  const path = `https://app.londoncitypool.com/api/league/results/${season}?apiKey=${process.env.API_KEY}`
+  console.log(path)
   try {
     const response = await fetch(path, {
       headers: { Accept: 'application/json' },
@@ -19,7 +20,7 @@ const handler = async function () {
         .map(player => player.FirstName + ' ' + player.LastName)
 
     const b = [...new Set(a)].sort()
-    console.log(JSON.stringify(b))
+    // console.log(JSON.stringify(b))
 
     return {
       statusCode: 200,

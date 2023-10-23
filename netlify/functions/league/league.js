@@ -1,7 +1,4 @@
-//import fetch from 'node-fetch'
-
-const key = process.env.API_KEY
-const path = `https://app.londoncitypool.com/api/seasons?apiKey=${key}`
+const path = `https://app.londoncitypool.com/api/seasons?apiKey=${process.env.API_KEY}`
 
 const handler = async function () {
   //console.log(path)
@@ -15,20 +12,20 @@ const handler = async function () {
     }
     const data = await response.json()
 
-    const b = JSON.parse(data)
+//    const b = JSON.parse(data)
 //        .map(s => {
 //          return { Name: s.Name, Id: s.Id }
 //        })
-        .find(s => s.Status === 'InProgress')
+//        .find(s => s.Status === 'InProgress')
 
-    console.log(b)
+//    console.log(data.sort((a,b) => {a - b}))
     //console.log("got data")
     return {
       statusCode: 200,
       headers: {
         "Access-Control-Allow-Origin": "*", // Allow from anywhere
       },
-      body: JSON.stringify(b)
+      body: JSON.stringify(data)
     }
   } catch (error) {
     // output to netlify function log

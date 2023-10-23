@@ -21,7 +21,14 @@
             {{ else if eq .Params.page_type "form" }}{{ partial "form" . }}
             {{ else if eq .Params.page_type "article" }}{{ partial "article" . }}
             {{ else if eq .Params.page_type "content" }}{{ partial "content" . }}
-            {{ else }}{{ partial "missing-type" . }}{{ end }}
+            {{ else if eq .Params.page_type "vue-component" }}
+                {{ partial "vue-component-start" . }}
+                    {{ if eq .Params.component "league-status" }}<league-status></league-status>
+
+                    {{ else }}<div>No component specified</div>
+                    {{ end }}
+                {{ partial "vue-component-end" . }}
+            {{ else }}<div>No page_type specified</div>{{ end }}
         </div><!-- #container -->
     </div><!-- #main -->
 </div>
