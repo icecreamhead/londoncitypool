@@ -1,34 +1,54 @@
+const fetchPlayers = async function (id, name, status) {
+
+    const p = `https://app.londoncitypool.com/api/league/results/${id}?apiKey=${process.env.API_KEY}`
+    const r = await fetch(p, {
+          headers: { Accept: 'application/json' },
+    })
+    if (!r.ok) {
+      console.log(r)
+      // NOT res.status >= 200 && res.status < 300
+      return { statusCode: r.status, body: r.statusText }
+    }
+
+    const json = await r.json()
+    const players_ = JSON.parse(json)
+       .flatMap(result => result.Sections)
+       .flatMap(section => section.Frames)
+       .flatMap(frame => frame.HomePlayers.concat(frame.AwayPlayers))
+       .filter(player => player.FirstName && player.LastName)
+       .map(player => player.FirstName + ' ' + player.LastName)
+    const players = [...new Set(players_)].sort()
+
+    return { Id: id, Name: name, Status: status, Players: players }
+}
+
 const handler = async function (event) {
   const season = (event.queryStringParameters.season) ? event.queryStringParameters.season : 74
-  const path = `https://app.londoncitypool.com/api/league/results/${season}?apiKey=${process.env.API_KEY}`
-  console.log(path)
+  const seasonsPath = `https://app.londoncitypool.com/api/seasons?apiKey=${process.env.API_KEY}`
+
   try {
-    const response = await fetch(path, {
+    const seasonsResponse = await fetch(seasonsPath, {
       headers: { Accept: 'application/json' },
     })
-    if (!response.ok) {
+    if (!seasonsResponse.ok) {
       // NOT res.status >= 200 && res.status < 300
       return { statusCode: response.status, body: response.statusText }
     }
-    const data = await response.json()
+    const seasonsArray = JSON.parse(await seasonsResponse.json())
 
-    const a = JSON.parse(data)
-        .flatMap(result => result.Sections)
-        .flatMap(section => section.Frames)
-        .flatMap(frame => frame.HomePlayers.concat(frame.AwayPlayers))
-        .filter(player => player.FirstName !== null && player.LastName !== null)
-        .map(player => player.FirstName + ' ' + player.LastName)
-
-    const b = [...new Set(a)].sort()
-    // console.log(JSON.stringify(b))
+    const enriched = seasonsArray.map(s => {
+        return fetchPlayers(s.Id, s.Name, s.Status)
+    })
+    const resolved = await Promise.all(enriched)
 
     return {
       statusCode: 200,
       headers: {
         "Access-Control-Allow-Origin": "*", // Allow from anywhere
       },
-      body: JSON.stringify(b)
+      body: JSON.stringify(resolved)
     }
+
   } catch (error) {
     // output to netlify function log
     console.log(error)

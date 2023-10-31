@@ -1,7 +1,7 @@
 const path = `https://app.londoncitypool.com/api/seasons?apiKey=${process.env.API_KEY}`
 
 const handler = async function () {
-  //console.log(path)
+
   try {
     const response = await fetch(path, {
       headers: { Accept: 'application/json' },
@@ -12,20 +12,12 @@ const handler = async function () {
     }
     const data = await response.json()
 
-//    const b = JSON.parse(data)
-//        .map(s => {
-//          return { Name: s.Name, Id: s.Id }
-//        })
-//        .find(s => s.Status === 'InProgress')
-
-//    console.log(data.sort((a,b) => {a - b}))
-    //console.log("got data")
     return {
       statusCode: 200,
       headers: {
         "Access-Control-Allow-Origin": "*", // Allow from anywhere
       },
-      body: JSON.stringify(data)
+      body: data
     }
   } catch (error) {
     // output to netlify function log

@@ -2,6 +2,9 @@ public/
 /.idea/
 resources
 node_modules
+serve
+*.lock
+netlify/functions/*.zip
 
 # Local Netlify folder
 .netlify

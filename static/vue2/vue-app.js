@@ -10,15 +10,14 @@ const ActivePlayers = Vue.component('ActivePlayers', {
       </table>
     </div>`,
     data: () => ({
-        players: []
+
     }),
     mounted () {
-        fetch(`${apiHost}/.netlify/functions/active-players?season=${this.season}`)
-            .then(response => response.json())
-            .then(data => this.players = data);
+
     },
     props: {
-        season: Number
+        season: Number,
+        players: Array
     }
 })
 
@@ -30,19 +29,23 @@ const LeagueStatus = Vue.component('LeagueStatus', {
                 <option v-for="s in seasons" :value="s.Id">{{ s.Name }}</option>
             </select>
         </span>
-        <active-players v-if="id" :season="id" :key="id"></active-players>
+        <br>
+        <active-players v-if="id" :season="id" :key="id" :players="seasonPlayers"></active-players>
+        <img v-else="id" src="/loading.gif" style="display:block;margin-left:auto;margin-right:auto" />
     </div>`,
     data: () => ({
-//        season: "<loading>",
         id: null,
-        seasons: []
+        seasons: [],
+        seasonPlayers: []
     }),
     mounted () {
-        fetch(`${apiHost}/.netlify/functions/league`)
+        fetch(`${apiHost}/.netlify/functions/active-players`)
             .then(response => response.json())
             .then(data => {
-                this.seasons = JSON.parse(data).sort((a,b) => b.Id-a.Id);
+//                console.log('mounted')
+                this.seasons = data.sort((a,b) => b.Id - a.Id);
                 this.id = this.seasons[0].Id;
+                this.seasonPlayers = this.seasons[0].Players
             });
 
     },
@@ -52,6 +55,7 @@ const LeagueStatus = Vue.component('LeagueStatus', {
     methods: {
         onChange(event) {
             this.id = parseInt(event.target.value)
+            this.seasonPlayers = this.seasons.find(s => s.Id === this.id).Players
         }
     }
 })
@@ -59,14 +63,9 @@ const LeagueStatus = Vue.component('LeagueStatus', {
 const vueApp = new Vue({
     el: '#vapp',
     data: {
-//        display: 'greenbox'
+
     },
     methods: {
-//        toggleBox() {
-//            this.display === 'redbox' ? this.display = 'greenbox' : this.display = 'redbox'
-//        },
-//        formatDate() {
-//            return new Date().toDateString()
-//        }
+
     }
 })
