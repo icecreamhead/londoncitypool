@@ -4,8 +4,9 @@ const ActivePlayers = Vue.component('ActivePlayers', {
     template: `<div>
       </br>
       <table>
+          <tr><th>Player</th></tr>
           <tr v-for="player in players">
-              <td>{{ player }}</td>
+              <td>{{ player.Name }}</td>
           </tr>
       </table>
     </div>`,
@@ -31,7 +32,7 @@ const LeagueStatus = Vue.component('LeagueStatus', {
         </span>
         <br>
         <active-players v-if="id" :season="id" :key="id" :players="seasonPlayers"></active-players>
-        <img v-else="id" src="/loading.gif" style="display:block;margin-left:auto;margin-right:auto" />
+        <img v-else src="/loading.gif" style="display:block;margin-left:auto;margin-right:auto" />
     </div>`,
     data: () => ({
         id: null,

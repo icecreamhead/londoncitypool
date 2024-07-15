@@ -1,5 +1,11 @@
-const fetchPlayers = async function (id, name, status) {
+function uniq(players) {
+    var seen = {};
+    return players.filter(function(player) {
+        return seen.hasOwnProperty(player.Name) ? false : (seen[player.Name] = true);
+    });
+}
 
+const fetchPlayers = async function (id, name, status) {
     const p = `https://app.londoncitypool.com/api/league/results/${id}?apiKey=${process.env.API_KEY}`
     const r = await fetch(p, {
           headers: { Accept: 'application/json' },
@@ -11,13 +17,15 @@ const fetchPlayers = async function (id, name, status) {
     }
 
     const json = await r.json()
-    const players_ = JSON.parse(json)
+    const players_ = json
        .flatMap(result => result.Sections)
        .flatMap(section => section.Frames)
        .flatMap(frame => frame.HomePlayers.concat(frame.AwayPlayers))
        .filter(player => player.FirstName && player.LastName)
-       .map(player => player.FirstName + ' ' + player.LastName)
-    const players = [...new Set(players_)].sort()
+       .map(player => {
+            return { Name : player.FirstName + ' ' + player.LastName }
+       })
+    const players = uniq(players_).sort((a, b) => a.Name.localeCompare(b.Name))
 
     return { Id: id, Name: name, Status: status, Players: players }
 }
@@ -25,7 +33,7 @@ const fetchPlayers = async function (id, name, status) {
 const handler = async function (event) {
   const season = (event.queryStringParameters.season) ? event.queryStringParameters.season : 74
   const seasonsPath = `https://app.londoncitypool.com/api/seasons?apiKey=${process.env.API_KEY}`
-
+//  console.log(event.headers.origin)
   try {
     const seasonsResponse = await fetch(seasonsPath, {
       headers: { Accept: 'application/json' },
@@ -34,17 +42,18 @@ const handler = async function (event) {
       // NOT res.status >= 200 && res.status < 300
       return { statusCode: response.status, body: response.statusText }
     }
-    const seasonsArray = JSON.parse(await seasonsResponse.json())
+    const seasonsArray = await seasonsResponse.json();
 
     const enriched = seasonsArray.map(s => {
         return fetchPlayers(s.Id, s.Name, s.Status)
     })
     const resolved = await Promise.all(enriched)
-
+    const allow = event.headers.origin === 'http://localhost:1313' || event.headers.origin === 'https://londoncitypool.com'
+        ? event.headers.origin : null
     return {
       statusCode: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*", // Allow from anywhere
+        "Access-Control-Allow-Origin": allow, // Allow from anywhere
       },
       body: JSON.stringify(resolved)
     }
