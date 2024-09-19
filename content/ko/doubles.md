@@ -1,11 +1,12 @@
 ---
 title: Doubles
-date: 2023-10-12
+date: 2024-09-19
 page_type: content
-sheet_gid: 12
-iframe_height: 972
-iframe_width: 968
+#sheet_gid: 12
+#iframe_height: 972
+#iframe_width: 968
 nodateline: true
 noheaderlink: true
 ---
-The 2023/24 doubles KO draw hasn't yet been done.
+
+Knockout information can be found on our new RackEmApp web app [here](https://app.londoncitypool.com)!

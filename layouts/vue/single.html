@@ -33,7 +33,7 @@
 {{ partial "footer.html" . }}
 </body>
 <script nonce="@addNonce">
-    const deref = v => "\{\{" + v + "\}\}";
+    const js = v => "\{\{" + v + "\}\}";
     Vue.component('ColoredBox', {
         template: "<div class=\"box\">" +
             "<button v-on:click=\"toggleMe()\">Toggle Now</button>" +
@@ -59,25 +59,21 @@
             <h2>Fixtures</h2>
             <table>
                 <tr v-for="(row, idx) in rows">
-                    <template v-if="row.length > 0">
-                        <th v-if="idx == 0" v-for="val in row">
-                            ${deref('val')}
-                        </th>
-                        <td v-if="idx != 0" v-for="val in row">
-                            ${deref('val')}
-                        </td>
-                        <span v-for="col in 8">${deref('row[col]')}</span>
+                    <template v-if="d === row.CalendarDate.Name + ': ' + new Date(row.CalendarDate.Date).toDateString()">
+                        <td></td>
                     </template>
                     <template v-else>
-                        <td v-for="col in 8">&nbsp;</td>
+                        <td>${js('d = row.CalendarDate.Name + ": " + new Date(row.CalendarDate.Date).toDateString()')}</td>
                     </template>
+                    <td>${js('row.HomeTeam.Name')} vs ${js('row.AwayTeam.Name')}</td>
                 </tr>
             </table>
             </div>
         `,
         data: function() {
             return {
-                rows: []
+                rows: [],
+                d: ""
             }
         },
         mounted () {
@@ -86,9 +82,17 @@
             //     .get('https://sheets.googleapis.com/v4/spreadsheets/1LU4pl2MJbiRFtsPO76JXb5fj3KI-25usVU3GzRewM4I/values/Sheet1?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
             //     .then(response => (this.rows = response.data.values))
             // fetch('https://sheets.googleapis.com/v4/spreadsheets/1ixjSVi7oDpcJEaa7lY1BnFI_RqJtn3fX7cyy7vJdyRI/values/Leagues?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
-            fetch('https://sheets.googleapis.com/v4/spreadsheets/1ixjSVi7oDpcJEaa7lY1BnFI_RqJtn3fX7cyy7vJdyRI/values/Fixtures?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+            // fetch('https://sheets.googleapis.com/v4/spreadsheets/1ixjSVi7oDpcJEaa7lY1BnFI_RqJtn3fX7cyy7vJdyRI/values/Fixtures?alt=json&key=AIzaSyBBOLASWo2xB1tNOSqziRid6gulP_imNBs')
+            //     .then((response) => response.json())
+            //     .then((data) => this.rows = data.values);
+            fetch('http://localhost:7070/async-proxy/https%3A%2F%2Fapp.londoncitypool.com%2Fapi%2Fleague%2Ffixtures%2F74%3FapiKey%3DsSWeTUs0bE6Du39oszArg')
                 .then((response) => response.json())
-                .then((data) => this.rows = data.values);
+                .then((data) => this.rows = data);
+        },
+        methods: {
+            fDate() {
+                return this.$root.formatDate();
+            }
         }
     })
     const vueApp = new Vue({
@@ -99,6 +103,9 @@
         methods: {
             toggleBox() {
                 this.display === 'redbox' ? this.display = 'greenbox' : this.display = 'redbox'
+            },
+            formatDate() {
+                return new Date().toDateString()
             }
         }
     })

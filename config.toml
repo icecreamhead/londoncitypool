@@ -115,6 +115,7 @@ canonifyURLs = true
 
 [[menu.main]]
     name  = "Winter League"
+    url   = "/admin/winter-rules"
     parent = "Resources"
     weight = 20
 
@@ -124,14 +125,9 @@ canonifyURLs = true
     parent = "Winter League"
     weight = 10
 
-#[[menu.main]]
-#    name  = "Winter League Scoresheet"
-#    url   = "/citypoolleague_resultsheet.pdf"
-#    parent = "Winter League"
-#    weight = 20
-
 [[menu.main]]
     name  = "Summer League"
+    url   = "/admin/summer-rules"
     parent = "Resources"
     weight = 30
 
@@ -140,24 +136,6 @@ canonifyURLs = true
     url   = "/admin/summer-rules"
     parent = "Summer League"
     weight = 10
-
-#[[menu.main]]
-#    name  = "Summer League Scoresheet"
-#    url   = "/citypoolleague_resultsheet.pdf"
-#    parent = "Summer League"
-#    weight = 20
-
-#[[menu.main]]
-#    name  = "Player Registration"
-#    url   = "/admin/forms/registration"
-#    parent = "Resources"
-#    weight = 40
-
-#[[menu.main]]
-#    name  = "Result Submission"
-#    url   = "/admin/forms/submission"
-#    parent = "Resources"
-#    weight = 50
 
 [[menu.main]]
     name  = "Admin Portal"
