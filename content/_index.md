@@ -1,10 +1,10 @@
 ---
 title: Home
-date: 2023-08-11
-chairman: Josh Cooke
-secretary: Omeed Starmer
+date: 2025-09-28
+chairman: Omeed Starmer
+secretary: Laurence Baker
 treasurer: Richard Phillips
-league: Omeed Starmer
+league: Bhavik Shah
 interleague: Zander Khan
-ko: Lindsay Russell
+ko: Vlad Levitsky
 ---
